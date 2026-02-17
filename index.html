@@ -1,167 +1,165 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sales: Human X KI – KI im Vertrieb | LeadingX</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Segoe UI,Tahoma,Geneva,sans-serif;color:#ecf0f1;background:#1a1a2e;line-height:1.6}
-header{background:linear-gradient(135deg,#1a1a2e,#16213e);padding:1rem 0;border-bottom:3px solid #e94560;position:sticky;top:0;z-index:1000;box-shadow:0 4px 15px rgba(0,0,0,0.3)}
-.header-container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 2rem}
-.logo{font-weight:bold;font-size:1.5rem;color:#e94560}
-.logo span{color:#f39c12}
-nav{display:flex;gap:2rem}
-nav a{color:#ecf0f1;text-decoration:none;font-weight:500;transition:0.3s}
-nav a:hover{color:#e94560}
-.hero{background:linear-gradient(135deg,#16213e,#0f3460);padding:6rem 2rem;text-align:center}
-.hero h1{font-size:3.2rem;font-weight:800;color:#fff;margin-bottom:1rem}
-.hero h1 .highlight{color:#e94560}
-.hero-subtitle{font-size:1.3rem;color:#bdc3c7;margin-bottom:2rem;max-width:700px;margin-left:auto;margin-right:auto}
-.cta-buttons{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;margin-top:2rem}
-.btn-primary{background:linear-gradient(135deg,#e94560,#d63447);color:#fff;padding:1rem 2.5rem;font-size:1.1rem;border:none;border-radius:50px;cursor:pointer;font-weight:700;transition:0.3s;text-transform:uppercase}
-.btn-primary:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(233,69,96,0.5)}
-.section{padding:5rem 2rem}
-.container{max-width:1200px;margin:0 auto}
-.section-title{font-size:2.5rem;font-weight:800;text-align:center;margin-bottom:1rem;color:#fff}
-.highlight{color:#e94560}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin-top:3rem}
-.card{background:linear-gradient(135deg,#16213e,rgba(233,69,96,0.1));padding:2rem;border-radius:12px;border-left:5px solid #e94560;transition:0.3s}
-.card:hover{transform:translateY(-5px);box-shadow:0 8px 25px rgba(233,69,96,0.2)}
-.card h3{color:#e94560;font-size:1.4rem;margin-bottom:1rem}
-.card p{color:#bdc3c7;line-height:1.8}
-.problem{background-color:#1a1a2e}
-.solution{background:linear-gradient(135deg,#16213e,#0f3460)}
-.solution .card{border-left:none;border-top:4px solid linear-gradient(90deg,#e94560,#f39c12)}
-.benefits{background-color:#1a1a2e}
-.benefit-item{padding:2rem;background:linear-gradient(135deg,#16213e,rgba(15,52,96,0.5));border-radius:12px;border-left:5px solid #f39c12;margin-top:1rem}
-.benefit-item h4{color:#f39c12;margin-bottom:0.8rem}
-.cta-section{padding:5rem 2rem;text-align:center;background:linear-gradient(135deg,#16213e,#0f3460)}
-.cta-section h2{font-size:2.5rem;color:#fff;margin-bottom:1rem}
-.cta-section p{font-size:1.2rem;color:#bdc3c7;max-width:600px;margin:0 auto 2rem}
-footer{background-color:#1a1a2e;border-top:1px solid rgba(233,69,96,0.3);padding:2rem;text-align:center;color:#bdc3c7}
-.stat{color:#e94560;font-weight:800;font-size:1.3rem}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales: Human X KI – KI im Vertrieb | LeadingX</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:Segoe UI,Tahoma,Geneva,sans-serif;color:#003d7a;background:#6b9cc4;line-height:1.6}
+    header{background:linear-gradient(135deg,#6b9cc4,#5a9ac8);padding:1rem 0;border-bottom:3px solid #FFD700;position:sticky;top:0;z-index:1000;box-shadow:0 4px 15px rgba(0,0,0,0.3)}
+    .header-container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 2rem}
+    .logo{font-weight:bold;font-size:1.5rem;color:#003d7a}
+    .logo span{color:#FFD700}
+    nav{display:flex;gap:2rem}
+    nav a{color:#003d7a;text-decoration:none;font-weight:500;transition:0.3s}
+    nav a:hover{color:#FFD700}
+    .hero{background:linear-gradient(135deg,#5a9ac8,#4a89bb);padding:6rem 2rem;text-align:center}
+    .hero h1{font-size:3.2rem;font-weight:800;color:#fff;margin-bottom:1rem}
+    .hero h1 .highlight{color:#FFD700}
+    .hero-subtitle{font-size:1.3rem;color:#fff;margin-bottom:2rem;max-width:700px;margin-left:auto;margin-right:auto}
+    .cta-buttons{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;margin-top:2rem}
+    .btn-primary{background:linear-gradient(135deg,#FFD700,#FFC700);color:#003d7a;padding:1rem 2.5rem;font-size:1.1rem;border:none;border-radius:50px;cursor:pointer;font-weight:700;transition:0.3s;text-transform:uppercase}
+    .btn-primary:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(255,215,0,0.5)}
+    .section{padding:5rem 2rem}
+    .container{max-width:1200px;margin:0 auto}
+    .section-title{font-size:2.5rem;font-weight:800;text-align:center;margin-bottom:1rem;color:#003d7a}
+    .highlight{color:#FFD700}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin-top:3rem}
+    .card{background:linear-gradient(135deg,#5a9ac8,rgba(255,215,0,0.1));padding:2rem;border-radius:12px;border-left:5px solid #FFD700;transition:0.3s}
+    .card:hover{transform:translateY(-5px);box-shadow:0 8px 25px rgba(255,215,0,0.2)}
+    .card h3{color:#FFD700;font-size:1.4rem;margin-bottom:1rem}
+    .card p{color:#fff;line-height:1.8}
+    .problem{background-color:#6b9cc4}
+    .solution{background:linear-gradient(135deg,#5a9ac8,#4a89bb)}
+    .solution .card{border-left:none;border-top:4px solid linear-gradient(90deg,#FFD700,#FFC700)}
+    .benefits{background-color:#6b9cc4}
+    .benefit-item{padding:2rem;background:linear-gradient(135deg,#5a9ac8,rgba(74,137,187,0.5));border-radius:12px;border-left:5px solid #FFD700;margin-top:1rem}
+    .benefit-item h4{color:#FFD700;margin-bottom:0.8rem}
+    .cta-section{padding:5rem 2rem;text-align:center;background:linear-gradient(135deg,#5a9ac8,#4a89bb)}
+    .cta-section h2{font-size:2.5rem;color:#fff;margin-bottom:1rem}
+    .cta-section p{font-size:1.2rem;color:#fff;max-width:600px;margin:0 auto 2rem}
+    footer{background-color:#6b9cc4;border-top:1px solid rgba(255,215,0,0.3);padding:2rem;text-align:center;color:#003d7a}
+    .stat{color:#FFD700;font-weight:800;font-size:1.3rem}
+  </style>
 </head>
 <body>
-<header>
-<div class="header-container">
-<div class="logo">Sales: Human <span>X</span> KI</div>
-<nav>
-<a href="#problem">Problem</a>
-<a href="#solution">Lösung</a>
-<a href="#leadingx">Warum LeadingX</a>
-<a href="#contact">Kontakt</a>
-</nav>
-</div>
-</header>
+  <header>
+    <div class="header-container">
+      <div class="logo">Sales: Human <span>X</span> KI</div>
+      <nav>
+        <a href="#problem">Problem</a>
+        <a href="#solution">Lösung</a>
+        <a href="#leadingx">Warum LeadingX</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+    </div>
+  </header>
 
-<section class="hero">
-<div class="container" style="max-width:900px">
-<h1>Sales: Human <span class="highlight">X</span> KI</h1>
-<p class="hero-subtitle">KI im Vertrieb – der Mensch bleibt im Mittelpunkt</p>
-<p style="font-size:1.1rem;color:#bdc3c7;margin-bottom:2rem">Begleitung bei der Einführung von KI im Vertrieb – mit Fokus auf Menschen, Haltung und nachhaltigen Change Management.</p>
-<div class="cta-buttons">
-<button class="btn-primary">Erstes Gespräch buchen</button>
-<button class="btn-primary" style="background:transparent;border:2px solid #e94560;color:#e94560">Mehr erfahren</button>
-</div>
-</div>
-</section>
+  <section class="hero">
+    <div class="container">
+      <h1>Sales: Human <span class="highlight">X</span> KI</h1>
+      <p class="hero-subtitle">KI im Vertrieb – der Mensch bleibt im Mittelpunkt</p>
+      <p>Begleitung bei der Einführung von KI im Vertrieb – mit Fokus auf Menschen, Haltung und nachhaltigen Change Management.</p>
+      <div class="cta-buttons">
+        <button class="btn-primary">ERSTES GESPRÄCH BUCHEN</button>
+        <button class="btn-primary">MEHR ERFAHREN</button>
+      </div>
+    </div>
+  </section>
 
-<section id="problem" class="section problem">
-<div class="container">
-<h2 class="section-title">Das Problem: <span class="highlight">KI im Vertrieb scheitert oft</span></h2>
-<p style="text-align:center;color:#bdc3c7;margin-top:2rem">Acht von zehn KI-Projekte im Vertrieb erreichen ihre Ziele nicht – nicht wegen der Technologie, sondern wegen Menschen, Prozessen und fehlender Grundlagen.</p>
-<div class="grid">
-<div class="card">
-<h3>📊 80% Misserfolgsquote</h3>
-<p><span class="stat">80% aller KI-Projekte</span> im Vertrieb scheitern. Hauptgründe: schlechte Datenqualität, unklar Ziele, mangelnde Einbindung der Mannschaft.</p>
-</div>
-<div class="card">
-<h3>⚠️ Datenqualität</h3>
-<p><span class="stat">85%</span> der Projektfehlschläge entstehen durch unzureichende oder inkonsistente Daten. Das ist das größte Einzelrisiko.</p>
-</div>
-<div class="card">
-<h3>👥 Mensch nicht mitgenommen</h3>
-<p>Verkäufer erleben oftmals KI als Bedrohung. Fehlender Change Management führt zu Widerwillen und mangelnder Adoption.</p>
-</div>
-</div>
-</div>
-</section>
+  <section class="section problem" id="problem">
+    <div class="container">
+      <h2 class="section-title">Das Problem: <span class="highlight">KI im Vertrieb scheitert oft</span></h2>
+      <p>Acht von zehn KI-Projekte im Vertrieb erreichen ihre Ziele nicht – nicht wegen der Technologie, sondern wegen Menschen, Prozessen und fehlender Grundlagen.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>📊 <span class="stat">80%</span> Misserfolgsquote</h3>
+          <p><span class="stat">80% aller KI-Projekte</span> im Vertrieb scheitern. Hauptgründe: schlechte Datenqualität, unklar Ziele, mangelnde Einbindung der Mannschaft.</p>
+        </div>
+        <div class="card">
+          <h3>⚠️ Datenqualität</h3>
+          <p><span class="stat">85%</span> der Projektfehlschläge entstehen durch unzureichende oder inkonsistente Daten. Das ist das größte Einzelrisiko.</p>
+        </div>
+        <div class="card">
+          <h3>👥 Mensch nicht mitgenommen</h3>
+          <p>Verkäufer erleben oftmals KI als Bedrohung. Fehlender Change Management führt zu Widerwillen und mangelnder Adoption.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section id="solution" class="section solution">
-<div class="container">
-<h2 class="section-title">Die Lösung: <span class="highlight">Sales: Human X KI</span></h2>
-<p style="text-align:center;color:#bdc3c7;margin-top:2rem">Systematische Begleitung bei der KI-Einführung – mit klarem Fokus auf Menschen, Haltung und nachhaltiger Veränderung.</p>
-<div class="grid">
-<div class="card">
-<h3>🔍 Schritt 1: Ist-Analyse</h3>
-<p>Transparente Erhebung der aktuellen Situation, Kompetenzen, Datenqualität und Einstellungen. Diagnose vor Technologie.</p>
-</div>
-<div class="card">
-<h3>💪 Schritt 2: Vertriebsskills stärken</h3>
-<p>Workshops zu Verkaufskompetenz, Haltung und Einstellung – damit Teams Veränderung aktiv mittragen.</p>
-</div>
-<div class="card">
-<h3>🎯 Schritt 3: Ziele definieren</h3>
-<p>Gemeinsame Entwicklung von konkreten KI-Einsatzfeldern und messbaren Zielen – SMART und realistisch.</p>
-</div>
-<div class="card">
-<h3>🚀 Schritt 4: Begleitete Einführung</h3>
-<p>Pilotphasen, Trainings, Feedback-Schleifen – ein schrittweiser, gesund wachsender Prozess statt Big Bang.</p>
-</div>
-<div class="card">
-<h3>📈 Schritt 5: Governance & Optimierung</h3>
-<p>Laufendes Monitoring, KPI-Tracking und kontinuierliche Verbesserung – transparent und nachhaltig.</p>
-</div>
-</div>
-</section>
+  <section class="section solution" id="solution">
+    <div class="container">
+      <h2 class="section-title">Die Lösung: <span class="highlight">Sales: Human X KI</span></h2>
+      <p>Systematische Begleitung bei der KI-Einführung – mit klarem Fokus auf Menschen, Haltung und nachhaltiger Veränderung.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>🔍 Schritt 1: Ist-Analyse</h3>
+          <p>Transparente Erhebung der aktuellen Situation, Kompetenzen, Datenqualität und Einstellungen. Diagnose vor Technologie.</p>
+        </div>
+        <div class="card">
+          <h3>💪 Schritt 2: Vertriebsskills stärken</h3>
+          <p>Workshops zu Verkaufskompetenz, Haltung und Einstellung – damit Teams Veränderung aktiv mittragen.</p>
+        </div>
+        <div class="card">
+          <h3>🎯 Schritt 3: Ziele definieren</h3>
+          <p>Gemeinsame Entwicklung von konkreten KI-Einsatzfeldern und messbaren Zielen – SMART und realistisch.</p>
+        </div>
+        <div class="card">
+          <h3>🚀 Schritt 4: Begleitete Einführung</h3>
+          <p>Pilotphasen, Trainings, Feedback-Schleifen – ein schrittweiser, gesund wachsender Prozess statt Big Bang.</p>
+        </div>
+        <div class="card">
+          <h3>📈 Schritt 5: Governance & Optimierung</h3>
+          <p>Laufendes Monitoring, KPI-Tracking und kontinuierliche Verbesserung – transparent und nachhaltig.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section id="leadingx" class="section benefits">
-<div class="container">
-<h2 class="section-title">Warum <span class="highlight">LeadingX</span>?</h2>
-<p style="text-align:center;color:#bdc3c7;margin-top:2rem">LeadingX hat jahrelange Expertise in Verkaufspsychologie, Haltungsarbeit und Change Management – genau die Kernkompetenzen, die KI-Projekte erfolgreich machen.</p>
+  <section class="section benefits" id="leadingx">
+    <div class="container">
+      <h2 class="section-title">Warum <span class="highlight">LeadingX</span>?</h2>
+      <p>LeadingX hat jahrelange Expertise in Verkaufspsychologie, Haltungsarbeit und Change Management – genau die Kernkompetenzen, die KI-Projekte erfolgreich machen.</p>
+      <div class="benefit-item">
+        <h4>🎯 Menschen im Mittelpunkt</h4>
+        <p>Nicht: "Wie implementieren wir KI?" Sondern: "Wie nehmen wir die Menschen mit?" Das ist der USP von LeadingX.</p>
+      </div>
+      <div class="benefit-item">
+        <h4>🔄 Change Management Expertise</h4>
+        <p>70% digitaler Transformationen scheitern durch schlechtes Change Management. Wir haben die Expertise, dies zu vermeiden.</p>
+      </div>
+      <div class="benefit-item">
+        <h4>💼 Verkaufs-Kompetenz</h4>
+        <p>Mit Produkten wie V-Navi und X10 verfügen wir über fundierte Verkaufspsychologie – das ist die Basis für KI-Erfolg.</p>
+      </div>
+      <div class="benefit-item">
+        <h4>📊 Forschungsbasiert</h4>
+        <p>Aktuelle Studien zeigen: Managementunterstützung und positive Haltung sind die Top-Treiber für KI-Erfolg – nicht Technik-Know-how.</p>
+      </div>
+      <div class="benefit-item">
+        <h4>🎓 Ganzheitlicher Ansatz</h4>
+        <p>Wir begleiten Datenqualität, Governance, Ethik, Trainings und Kommunikation – alle kritischen Erfolgsfaktoren.</p>
+      </div>
+      <div class="benefit-item">
+        <h4>✅ 7x höhere Erfolgsrate</h4>
+        <p>Unternehmen mit systematischem Vorgehen, klarer Governance und professionellem Change Management haben 7x höhere Erfolgschancen.</p>
+      </div>
+    </div>
+  </section>
 
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;margin-top:3rem">
-<div class="benefit-item">
-<h4>🎯 Menschen im Mittelpunkt</h4>
-<p>Nicht: „Wie implementieren wir KI?" Sondern: „Wie nehmen wir die Menschen mit?" Das ist der USP von LeadingX.</p>
-</div>
-<div class="benefit-item">
-<h4>🔄 Change Management Expertise</h4>
-<p>70% digitaler Transformationen scheitern durch schlechtes Change Management. Wir haben die Expertise, dies zu vermeiden.</p>
-</div>
-<div class="benefit-item">
-<h4>💼 Verkaufs-Kompetenz</h4>
-<p>Mit Produkten wie V-Navi und X10 verfügen wir über fundierte Verkaufspsychologie – das ist die Basis für KI-Erfolg.</p>
-</div>
-<div class="benefit-item">
-<h4>📊 Forschungsbasiert</h4>
-<p>Aktuelle Studien zeigen: Managementunterstützung und positive Haltung sind die Top-Treiber für KI-Erfolg – nicht Technik-Know-how.</p>
-</div>
-<div class="benefit-item">
-<h4>🎓 Ganzheitlicher Ansatz</h4>
-<p>Wir begleiten Datenqualität, Governance, Ethik, Trainings und Kommunikation – alle kritischen Erfolgsfaktoren.</p>
-</div>
-<div class="benefit-item">
-<h4>✅ 7x höhere Erfolgsrate</h4>
-<p>Unternehmen mit systematischem Vorgehen, klarer Governance und professionellem Change Management haben 7x höhere Erfolgschancen.</p>
-</div>
-</div>
-</section>
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <h2>Bereit für erfolgreiche KI im Vertrieb?</h2>
+      <p>Lassen Sie uns ein unverbindliches erstes Gespräch führen. Wir analysieren Ihre Situation, zeigen Chancen auf und entwickeln gemeinsam einen Weg – mit klarem Fokus auf Menschen, Haltung und nachhaltigen Erfolg.</p>
+      <button class="btn-primary">JETZT GESPRÄCH VEREINBAREN</button>
+    </div>
+  </section>
 
-<section id="contact" class="cta-section">
-<div class="container" style="max-width:700px">
-<h2>Bereit für erfolgreiche KI im Vertrieb?</h2>
-<p>Lassen Sie uns ein unverbindliches erstes Gespräch führen. Wir analysieren Ihre Situation, zeigen Chancen auf und entwickeln gemeinsam einen Weg – mit klarem Fokus auf Menschen, Haltung und nachhaltigen Erfolg.</p>
-<button class="btn-primary">Jetzt Gespräch vereinbaren</button>
-</div>
-</section>
-
-<footer>
-<p>&copy; 2026 LeadingX | Sales: Human X KI</p>
-<p style="margin-top:1rem;font-size:0.9rem">Mensch im Mittelpunkt. KI im Dienst. Erfolg nachhaltig.</p>
-</footer>
-
+  <footer>
+    <p>&copy; 2026 LeadingX | Sales: Human X KI</p>
+    <p>Mensch im Mittelpunkt. KI im Dienst. Erfolg nachhaltig.</p>
+  </footer>
 </body>
 </html>
