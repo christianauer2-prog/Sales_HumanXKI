@@ -4,162 +4,364 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sales: Human X KI – KI im Vertrieb | LeadingX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <style>
-    *{margin:0;padding:0;box-sizing:border-box}
-    body{font-family:Segoe UI,Tahoma,Geneva,sans-serif;color:#003d7a;background:#6b9cc4;line-height:1.6}
-    header{background:linear-gradient(135deg,#6b9cc4,#5a9ac8);padding:1rem 0;border-bottom:3px solid #FFD700;position:sticky;top:0;z-index:1000;box-shadow:0 4px 15px rgba(0,0,0,0.3)}
-    .header-container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 2rem}
-    .logo{font-weight:bold;font-size:1.5rem;color:#003d7a}
-    .logo span{color:#FFD700}
-    nav{display:flex;gap:2rem}
-    nav a{color:#003d7a;text-decoration:none;font-weight:500;transition:0.3s}
-    nav a:hover{color:#FFD700}
-    .hero{background:linear-gradient(135deg,#5a9ac8,#4a89bb);padding:6rem 2rem;text-align:center}
-    .hero h1{font-size:3.2rem;font-weight:800;color:#fff;margin-bottom:1rem}
-    .hero h1 .highlight{color:#FFD700}
-    .hero-subtitle{font-size:1.3rem;color:#fff;margin-bottom:2rem;max-width:700px;margin-left:auto;margin-right:auto}
-    .cta-buttons{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;margin-top:2rem}
-    .btn-primary{background:linear-gradient(135deg,#FFD700,#FFC700);color:#003d7a;padding:1rem 2.5rem;font-size:1.1rem;border:none;border-radius:50px;cursor:pointer;font-weight:700;transition:0.3s;text-transform:uppercase}
-    .btn-primary:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(255,215,0,0.5)}
-    .section{padding:5rem 2rem}
-    .container{max-width:1200px;margin:0 auto}
-    .section-title{font-size:2.5rem;font-weight:800;text-align:center;margin-bottom:1rem;color:#003d7a}
-    .highlight{color:#FFD700}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin-top:3rem}
-    .card{background:linear-gradient(135deg,#5a9ac8,rgba(255,215,0,0.1));padding:2rem;border-radius:12px;border-left:5px solid #FFD700;transition:0.3s}
-    .card:hover{transform:translateY(-5px);box-shadow:0 8px 25px rgba(255,215,0,0.2)}
-    .card h3{color:#FFD700;font-size:1.4rem;margin-bottom:1rem}
-    .card p{color:#fff;line-height:1.8}
-    .problem{background-color:#6b9cc4}
-    .solution{background:linear-gradient(135deg,#5a9ac8,#4a89bb)}
-    .solution .card{border-left:none;border-top:4px solid linear-gradient(90deg,#FFD700,#FFC700)}
-    .benefits{background-color:#6b9cc4}
-    .benefit-item{padding:2rem;background:linear-gradient(135deg,#5a9ac8,rgba(74,137,187,0.5));border-radius:12px;border-left:5px solid #FFD700;margin-top:1rem}
-    .benefit-item h4{color:#FFD700;margin-bottom:0.8rem}
-    .cta-section{padding:5rem 2rem;text-align:center;background:linear-gradient(135deg,#5a9ac8,#4a89bb)}
-    .cta-section h2{font-size:2.5rem;color:#fff;margin-bottom:1rem}
-    .cta-section p{font-size:1.2rem;color:#fff;max-width:600px;margin:0 auto 2rem}
-    footer{background-color:#6b9cc4;border-top:1px solid rgba(255,215,0,0.3);padding:2rem;text-align:center;color:#003d7a}
-    .stat{color:#FFD700;font-weight:800;font-size:1.3rem}
+    :root {
+      --primary: #003d7a;
+      --accent: #FFD700;
+      --bg-light: #f8fbff;
+      --text-dark: #1a2b3c;
+      --text-muted: #5a6b7d;
+      --white: #ffffff;
+      --shadow: 0 10px 30px rgba(0, 61, 122, 0.08);
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body { 
+      font-family: 'Inter', -apple-system, sans-serif; 
+      color: var(--text-dark); 
+      background: var(--bg-light); 
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    h1, h2, h3 { 
+      font-family: 'Playfair Display', serif; 
+      font-weight: 700; 
+      line-height: 1.2;
+    }
+    
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+    
+    header { 
+      background: rgba(255, 255, 255, 0.95); 
+      backdrop-filter: blur(10px);
+      padding: 1.2rem 0; 
+      position: sticky; 
+      top: 0; 
+      z-index: 1000; 
+      border-bottom: 1px solid rgba(0, 61, 122, 0.1);
+    }
+    
+    .header-container { display: flex; justify-content: space-between; align-items: center; }
+    
+    .logo { 
+      font-family: 'Playfair Display', serif;
+      font-weight: 800; 
+      font-size: 1.6rem; 
+      color: var(--primary); 
+      text-decoration: none;
+    }
+    
+    .logo span { color: var(--accent); }
+    
+    nav { display: flex; gap: 2.5rem; }
+    
+    nav a { 
+      color: var(--text-dark); 
+      text-decoration: none; 
+      font-weight: 500; 
+      font-size: 0.95rem;
+      transition: color 0.3s ease;
+    }
+    
+    nav a:hover { color: var(--primary); }
+    
+    .hero { 
+      padding: 10rem 0 8rem; 
+      text-align: center; 
+      background: radial-gradient(circle at top right, #eef5ff 0%, var(--bg-light) 100%);
+    }
+    
+    .hero h1 { 
+      font-size: 4rem; 
+      margin-bottom: 1.5rem; 
+      color: var(--primary);
+    }
+    
+    .hero .highlight { color: var(--accent); font-style: italic; }
+    
+    .hero-subtitle { 
+      font-size: 1.4rem; 
+      color: var(--text-muted); 
+      max-width: 750px; 
+      margin: 0 auto 3rem;
+      font-weight: 400;
+    }
+    
+    .cta-buttons { display: flex; gap: 1rem; justify-content: center; }
+    
+    .btn {
+      padding: 1rem 2.2rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    .btn-primary { 
+      background: var(--primary); 
+      color: var(--white); 
+      border: none;
+    }
+    
+    .btn-primary:hover { 
+      transform: translateY(-2px); 
+      box-shadow: 0 15px 30px rgba(0, 61, 122, 0.2);
+    }
+    
+    .btn-outline { 
+      background: transparent; 
+      color: var(--primary); 
+      border: 2px solid var(--primary);
+    }
+    
+    .btn-outline:hover { background: rgba(0, 61, 122, 0.05); }
+    
+    .section { padding: 8rem 0; }
+    
+    .section-header { text-align: center; margin-bottom: 5rem; }
+    
+    .section-tag { 
+      text-transform: uppercase; 
+      letter-spacing: 0.15em; 
+      font-size: 0.8rem; 
+      color: var(--primary); 
+      font-weight: 700;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    
+    .section-title { font-size: 2.8rem; color: var(--primary); margin-bottom: 1.2rem; }
+    
+    .section-desc { color: var(--text-muted); max-width: 650px; margin: 0 auto; font-size: 1.1rem; }
+    
+    .grid { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+      gap: 2.5rem; 
+    }
+    
+    .card { 
+      background: var(--white); 
+      padding: 3rem 2.5rem; 
+      border-radius: 12px; 
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease;
+      border: 1px solid rgba(0, 61, 122, 0.03);
+    }
+    
+    .card:hover { transform: translateY(-8px); }
+    
+    .card h3 { font-size: 1.6rem; color: var(--primary); margin-bottom: 1.2rem; }
+    
+    .card p { color: var(--text-muted); font-size: 1rem; }
+    
+    .stat-number { 
+      display: block; 
+      font-size: 2.5rem; 
+      font-weight: 800; 
+      color: var(--accent); 
+      margin-bottom: 0.5rem; 
+      font-family: 'Inter', sans-serif;
+    }
+    
+    .benefit-list { margin-top: 2rem; }
+    
+    .benefit-item { 
+      display: flex; 
+      align-items: flex-start; 
+      gap: 1.5rem; 
+      margin-bottom: 2rem; 
+      padding-bottom: 2rem;
+      border-bottom: 1px solid rgba(0, 61, 122, 0.05);
+    }
+    
+    .benefit-item:last-child { border: none; }
+    
+    .benefit-icon { 
+      background: rgba(255, 215, 0, 0.15); 
+      color: var(--primary); 
+      width: 45px; 
+      height: 45px; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      border-radius: 50%;
+      flex-shrink: 0;
+      font-size: 1.2rem;
+    }
+    
+    .benefit-content h4 { font-size: 1.3rem; color: var(--primary); margin-bottom: 0.5rem; font-family: 'Inter', sans-serif; }
+    
+    .cta-section { 
+      background: var(--primary); 
+      color: var(--white); 
+      padding: 6rem 0; 
+      text-align: center;
+      border-radius: 20px;
+      margin: 4rem auto;
+      width: calc(100% - 4rem);
+    }
+    
+    .cta-section h2 { font-size: 2.5rem; margin-bottom: 1.5rem; color: var(--white); }
+    
+    .cta-section p { font-size: 1.2rem; opacity: 0.9; max-width: 600px; margin: 0 auto 3rem; }
+    
+    .cta-section .btn-primary { background: var(--accent); color: var(--primary); }
+    
+    footer { 
+      padding: 4rem 0; 
+      text-align: center; 
+      border-top: 1px solid rgba(0, 61, 122, 0.1);
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.8rem; }
+      nav { display: none; }
+      .section-title { font-size: 2.2rem; }
+    }
   </style>
 </head>
 <body>
   <header>
-    <div class="header-container">
-      <div class="logo">Sales: Human <span>X</span> KI</div>
+    <div class="container header-container">
+      <a href="#" class="logo">Leading<span>X</span></a>
       <nav>
-        <a href="#problem">Problem</a>
-        <a href="#solution">Lösung</a>
-        <a href="#leadingx">Warum LeadingX</a>
+        <a href="#problem">Das Problem</a>
+        <a href="#solution">Die Lösung</a>
+        <a href="#leadingx">Vorteile</a>
         <a href="#contact">Kontakt</a>
       </nav>
+      <a href="#contact" class="btn btn-primary" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">Anfragen</a>
     </div>
   </header>
 
   <section class="hero">
     <div class="container">
-      <h1>Sales: Human <span class="highlight">X</span> KI</h1>
-      <p class="hero-subtitle">KI im Vertrieb – der Mensch bleibt im Mittelpunkt</p>
-      <p>Begleitung bei der Einführung von KI im Vertrieb – mit Fokus auf Menschen, Haltung und nachhaltigen Change Management.</p>
+      <span class="section-tag">Sales Transformation</span>
+      <h1>Human <span class="highlight">X</span> KI</h1>
+      <p class="hero-subtitle">Systematische KI-Einführung im Vertrieb mit Fokus auf Psychologie, Haltung und nachhaltiges Change Management.</p>
       <div class="cta-buttons">
-        <button class="btn-primary">ERSTES GESPRÄCH BUCHEN</button>
-        <button class="btn-primary">MEHR ERFAHREN</button>
+        <a href="#contact" class="btn btn-primary">Strategiegespräch buchen</a>
+        <a href="#solution" class="btn btn-outline">Methodik entdecken</a>
       </div>
     </div>
   </section>
 
-  <section class="section problem" id="problem">
+  <section class="section" id="problem" style="background: #fff;">
     <div class="container">
-      <h2 class="section-title">Das Problem: <span class="highlight">KI im Vertrieb scheitert oft</span></h2>
-      <p>Acht von zehn KI-Projekte im Vertrieb erreichen ihre Ziele nicht – nicht wegen der Technologie, sondern wegen Menschen, Prozessen und fehlender Grundlagen.</p>
+      <div class="section-header">
+        <span class="section-tag">Status Quo</span>
+        <h2 class="section-title">Warum KI-Projekte oft scheitern</h2>
+        <p class="section-desc">Die Technik ist selten das Problem. Es ist die fehlende Einbindung der Menschen und Prozesse.</p>
+      </div>
       <div class="grid">
         <div class="card">
-          <h3>📊 <span class="stat">80%</span> Misserfolgsquote</h3>
-          <p><span class="stat">80% aller KI-Projekte</span> im Vertrieb scheitern. Hauptgründe: schlechte Datenqualität, unklar Ziele, mangelnde Einbindung der Mannschaft.</p>
+          <span class="stat-number">80%</span>
+          <h3>Misserfolgsquote</h3>
+          <p>Acht von zehn KI-Projekten erreichen ihre Ziele nicht – meist aufgrund mangelnder Akzeptanz im Team.</p>
         </div>
         <div class="card">
-          <h3>⚠️ Datenqualität</h3>
-          <p><span class="stat">85%</span> der Projektfehlschläge entstehen durch unzureichende oder inkonsistente Daten. Das ist das größte Einzelrisiko.</p>
+          <span class="stat-number">85%</span>
+          <h3>Datenrisiko</h3>
+          <p>Inkonsistente Daten sind der größte Hebel für Fehlschläge. Wir klären die Basis, bevor wir automatisieren.</p>
         </div>
         <div class="card">
-          <h3>👥 Mensch nicht mitgenommen</h3>
-          <p>Verkäufer erleben oftmals KI als Bedrohung. Fehlender Change Management führt zu Widerwillen und mangelnder Adoption.</p>
+          <span class="stat-number">USP</span>
+          <h3>Der Faktor Mensch</h3>
+          <p>KI wird oft als Bedrohung wahrgenommen. Wir wandeln Skepsis in produktive Zusammenarbeit um.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section solution" id="solution">
+  <section class="section" id="solution">
     <div class="container">
-      <h2 class="section-title">Die Lösung: <span class="highlight">Sales: Human X KI</span></h2>
-      <p>Systematische Begleitung bei der KI-Einführung – mit klarem Fokus auf Menschen, Haltung und nachhaltiger Veränderung.</p>
+      <div class="section-header">
+        <span class="section-tag">Der LeadingX Weg</span>
+        <h2 class="section-title">Unsere 5-Phasen Methodik</h2>
+        <p class="section-desc">Ein strukturierter Prozess für messbaren Erfolg und gesunde Transformation.</p>
+      </div>
       <div class="grid">
         <div class="card">
-          <h3>🔍 Schritt 1: Ist-Analyse</h3>
-          <p>Transparente Erhebung der aktuellen Situation, Kompetenzen, Datenqualität und Einstellungen. Diagnose vor Technologie.</p>
+          <h3>01 Ist-Analyse</h3>
+          <p>Transparente Erhebung von Kompetenzen und Datenqualität. Diagnose vor Technologie.</p>
         </div>
         <div class="card">
-          <h3>💪 Schritt 2: Vertriebsskills stärken</h3>
-          <p>Workshops zu Verkaufskompetenz, Haltung und Einstellung – damit Teams Veränderung aktiv mittragen.</p>
+          <h3>02 Skills & Haltung</h3>
+          <p>Workshops zu Verkaufskompetenz, damit Teams die Veränderung aktiv mitgestalten.</p>
         </div>
         <div class="card">
-          <h3>🎯 Schritt 3: Ziele definieren</h3>
-          <p>Gemeinsame Entwicklung von konkreten KI-Einsatzfeldern und messbaren Zielen – SMART und realistisch.</p>
+          <h3>03 SMART-Ziele</h3>
+          <p>Definition konkreter KI-Einsatzfelder mit klaren, messbaren Erfolgskriterien.</p>
         </div>
         <div class="card">
-          <h3>🚀 Schritt 4: Begleitete Einführung</h3>
-          <p>Pilotphasen, Trainings, Feedback-Schleifen – ein schrittweiser, gesund wachsender Prozess statt Big Bang.</p>
+          <h3>04 Pilot & Training</h3>
+          <p>Schrittweise Einführung mit Feedback-Schleifen statt riskantem "Big Bang".</p>
         </div>
         <div class="card">
-          <h3>📈 Schritt 5: Governance & Optimierung</h3>
-          <p>Laufendes Monitoring, KPI-Tracking und kontinuierliche Verbesserung – transparent und nachhaltig.</p>
+          <h3>05 Governance</h3>
+          <p>Laufendes Monitoring und kontinuierliche Optimierung für nachhaltigen ErVOLLg.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section benefits" id="leadingx">
+  <section class="section" id="leadingx" style="background: #fff;">
     <div class="container">
-      <h2 class="section-title">Warum <span class="highlight">LeadingX</span>?</h2>
-      <p>LeadingX hat jahrelange Expertise in Verkaufspsychologie, Haltungsarbeit und Change Management – genau die Kernkompetenzen, die KI-Projekte erfolgreich machen.</p>
-      <div class="benefit-item">
-        <h4>🎯 Menschen im Mittelpunkt</h4>
-        <p>Nicht: "Wie implementieren wir KI?" Sondern: "Wie nehmen wir die Menschen mit?" Das ist der USP von LeadingX.</p>
+      <div class="section-header">
+        <span class="section-tag">Expertise</span>
+        <h2 class="section-title">Warum LeadingX?</h2>
+        <p class="section-desc">Wir vereinen Verkaufspsychologie mit modernster Technologie-Expertise.</p>
       </div>
-      <div class="benefit-item">
-        <h4>🔄 Change Management Expertise</h4>
-        <p>70% digitaler Transformationen scheitern durch schlechtes Change Management. Wir haben die Expertise, dies zu vermeiden.</p>
-      </div>
-      <div class="benefit-item">
-        <h4>💼 Verkaufs-Kompetenz</h4>
-        <p>Mit Produkten wie V-Navi und X10 verfügen wir über fundierte Verkaufspsychologie – das ist die Basis für KI-Erfolg.</p>
-      </div>
-      <div class="benefit-item">
-        <h4>📊 Forschungsbasiert</h4>
-        <p>Aktuelle Studien zeigen: Managementunterstützung und positive Haltung sind die Top-Treiber für KI-Erfolg – nicht Technik-Know-how.</p>
-      </div>
-      <div class="benefit-item">
-        <h4>🎓 Ganzheitlicher Ansatz</h4>
-        <p>Wir begleiten Datenqualität, Governance, Ethik, Trainings und Kommunikation – alle kritischen Erfolgsfaktoren.</p>
-      </div>
-      <div class="benefit-item">
-        <h4>✅ 7x höhere Erfolgsrate</h4>
-        <p>Unternehmen mit systematischem Vorgehen, klarer Governance und professionellem Change Management haben 7x höhere Erfolgschancen.</p>
+      <div class="benefit-list">
+        <div class="benefit-item">
+          <div class="benefit-icon">🎯</div>
+          <div class="benefit-content">
+            <h4>Fokus auf Haltung</h4>
+            <p>Wir fragen nicht nur nach dem "Wie", sondern nach dem "Warum". Menschen bewegen ist unser Kern.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">🔄</div>
+          <div class="benefit-content">
+            <h4>Change Management</h4>
+            <p>Jahrelange Erfahrung in der Begleitung komplexer Transformationsprozesse in DACH-Unternehmen.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">📊</div>
+          <div class="benefit-content">
+            <h4>Forschungsbasiert</h4>
+            <p>Wir nutzen Erkenntnisse der Neurobiologie für effektivere Lern- und Arbeitsprozesse.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="cta-section" id="contact">
     <div class="container">
-      <h2>Bereit für erfolgreiche KI im Vertrieb?</h2>
-      <p>Lassen Sie uns ein unverbindliches erstes Gespräch führen. Wir analysieren Ihre Situation, zeigen Chancen auf und entwickeln gemeinsam einen Weg – mit klarem Fokus auf Menschen, Haltung und nachhaltigen Erfolg.</p>
-      <button class="btn-primary">JETZT GESPRÄCH VEREINBAREN</button>
+      <h2>Bereit für die Zukunft des Vertriebs?</h2>
+      <p>Lassen Sie uns gemeinsam analysieren, wie KI Ihre Vertriebsmannschaft sinnvoll unterstützen kann.</p>
+      <a href="mailto:info@LeadingX.com" class="btn btn-primary">Jetzt Gespräch vereinbaren</a>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2026 LeadingX | Sales: Human X KI</p>
-    <p>Mensch im Mittelpunkt. KI im Dienst. Erfolg nachhaltig.</p>
+    <div class="container">
+      <p>&copy; 2026 LeadingX | Sales: Human X KI</p>
+      <p style="margin-top: 0.5rem; font-style: italic;">Mensch im Mittelpunkt. KI im Dienst. Erfolg nachhaltig.</p>
+    </div>
   </footer>
 </body>
 </html>
